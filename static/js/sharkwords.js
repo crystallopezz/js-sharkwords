@@ -8,21 +8,24 @@ const WORDS = [
 let numWrong = 0;
 
 
-// Loop over the chars in `word` and create divs.
+
 //
 const createDivsForChars = (word) => {
-  console.log(word)
+
+  // Loop over the chars in `word` and create divs.
   for (i in word) {
     $('#word-container').append(`<div class="letter-box ${word[i]}"></div>`);
   }
-  // Replace this with your code
 };
 
 
-// Loop over each letter in `ALPHABET` and generate buttons.
+
 //
 const generateLetterButtons = () => {
-  // Replace this with your code
+  // Loop over each letter in `ALPHABET` and generate buttons.
+  for (letter in ALPHABET) {
+    $('#letter-buttons').append(`<button>${ALPHABET[letter]}</button>`)
+  }
 };
 
 
