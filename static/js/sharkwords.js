@@ -34,8 +34,7 @@ const generateLetterButtons = () => {
 // `buttonEl` is an `HTMLElement` object.
 //
 const disableLetterButton = (buttonEl) => {
-  const button = $(buttonEl);
-  button.attr('disabled', true);
+  $(buttonEl).attr('disabled', true);
 };
 
 
